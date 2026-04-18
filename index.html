@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnect - Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">🏠 CampusConnect</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="academics.html">Academics</a></li>
+                <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero">
+    <h1>Welcome to CampusConnect</h1>
+    <p>Your one-stop platform for academic success and campus updates</p>
+    
+    <!-- Image with alt, width, height (Chapter 8 requirement) -->
+    <img src="https://placekitten.com/800/400" alt="Students studying together on campus" width="800" height="400" class="hero-img">
+    
+    <br>
+    <button class="btn-custom" onclick="location.href='resources.html'">📚 Find Resources</button>
+    <button class="btn-custom" onclick="location.href='academics.html'">🎓 Explore Courses</button>
+</div>
+
+<!-- Main Content using Bootstrap Grid -->
+<div class="container my-5">
+    <div class="row g-4">
+        
+        <!-- Left Column (70% on desktop = col-md-8) -->
+        <div class="col-md-8">
+            <div class="card">
+                <h3>📢 Latest Announcements</h3>
+                <p><strong>500 Visitors in First Month!</strong> - Thank you for your support</p>
+                <p><strong>New study notes available</strong> - Web Development and Systems Development</p>
+                <p><strong>Feedback form updated</strong> - Tell us how we can improve</p>
+            </div>
+            
+            <div class="card">
+                <h3>💡 Study Tips</h3>
+                <p>Stay consistent, revise daily, and practice past exam questions. Use the resources section to download notes and watch video tutorials.</p>
+            </div>
+        </div>
+        
+        <!-- Right Column (28% on desktop = col-md-4) -->
+        <div class="col-md-4">
+            <div class="card">
+                <h3>🔗 Quick Links</h3>
+                <p><a href="resources.html" style="color:#00e0ff;">📄 Download Notes</a></p>
+                <p><a href="resources.html" style="color:#00e0ff;">🎥 Video Tutorials</a></p>
+                <p><a href="contact.html" style="color:#00e0ff;">💬 Student Support</a></p>
+                <p><a href="resources.html" style="color:#00e0ff;">🔗 Useful Links</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 CampusConnect | Designed for students | Built for success</p>
+    <p>
+        <a href="privacy.html">Privacy Policy</a> |
+        <a href="terms.html">Terms of Use</a> |
+        <a href="sitemap.html">Sitemap</a>
+    </p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
