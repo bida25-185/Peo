@@ -1,82 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CampusConnect - Home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>CampusConnect – Home</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">🏠 CampusConnect</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="academics.html">Academics</a></li>
-                <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            </ul>
-        </div>
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">CampusConnect</div>
+      <nav class="main-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="academics.html">Academics</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-</nav>
+  </header>
 
-<div class="hero">
-    <h1>Your Central Hub for Campus Success</h1>
-    <p>Access all your academic resources and campus updates in one place.</p>
-    <button class="btn-custom" onclick="location.href='resources.html'">Find Resources</button>
-    <button class="btn-custom" onclick="location.href='academics.html'">Explore Courses</button>
-</div>
+  <main>
+    <!-- Hero like your picture -->
+    <section class="hero hero-space">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-tag">For university students in Gaborone</p>
+          <h1>Welcome to CampusConnect</h1>
+          <p class="hero-subtitle">
+            Your central hub for academic resources, campus announcements, and student support — all in one place.
+          </p>
+          <div class="hero-buttons">
+            <a href="resources.html" class="btn btn-primary">Find Resources</a>
+            <a href="academics.html" class="btn btn-secondary">Explore Courses</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<div class="container my-5">
-    <div class="row g-4">
-        <div class="col-md-4">
-            <div class="card">
-                <h3>📚 Academics</h3>
-                <ul>
-                    <li>Course Overview</li>
-                    <li>Study Tips</li>
-                    <li>Academic Calendar</li>
-                </ul>
-                <button class="btn-custom" onclick="location.href='academics.html'">Learn More</button>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <h3>📢 Latest Announcements</h3>
-                <ul>
-                    <li>500 Visitors in First Month</li>
-                    <li>New Study Notes Available</li>
-                    <li>Feedback Form Updated</li>
-                </ul>
-                <button class="btn-custom" onclick="location.href='resources.html'">View All</button>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <h3>📁 Resources</h3>
-                <ul>
-                    <li>Study Notes (PDFs)</li>
-                    <li>Useful Links</li>
-                    <li>Video Tutorials</li>
-                </ul>
-                <button class="btn-custom" onclick="location.href='resources.html'">Access Now</button>
-            </div>
-        </div>
+    <!-- Three glass cards row -->
+    <section class="home-glass-row">
+      <div class="container glass-grid">
+        <!-- Announcements -->
+        <article class="glass-card">
+          <h2>Announcements</h2>
+          <ul>
+            <li>New notes uploaded for Year 1 Computer Science.</li>
+            <li>Midterm exam timetable now available.</li>
+            <li>Group project deadline reminder for next Friday.</li>
+          </ul>
+          <a href="academics.html#calendar" class="card-link">View all announcements →</a>
+        </article>
+
+        <!-- Study Tips -->
+        <article class="glass-card">
+          <h2>Study Tips</h2>
+          <ul>
+            <li>Plan a weekly study schedule and stick to it.</li>
+            <li>Review notes often instead of cramming.</li>
+            <li>Use past papers to practise exam questions.</li>
+          </ul>
+          <a href="academics.html#study-tips" class="card-link">See more tips →</a>
+        </article>
+
+        <!-- Quick Links -->
+        <article class="glass-card">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="academics.html">Academics overview</a></li>
+            <li><a href="resources.html#notes">Download study notes</a></li>
+            <li><a href="resources.html#links">External learning sites</a></li>
+            <li><a href="contact.html">Contact & feedback</a></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> CampusConnect. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="sitemap.html">Sitemap</a>
+      </nav>
     </div>
-</div>
-
-<footer>
-    <p>© 2026 CampusConnect | Designed for students | Built for success</p>
-    <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a> | <a href="sitemap.html">Sitemap</a></p>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
 </body>
 </html>

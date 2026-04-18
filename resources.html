@@ -1,80 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CampusConnect | Resources</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>CampusConnect – Resources</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">CampusConnect</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="academics.html">Academics</a></li>
-                <li class="nav-item"><a class="nav-link active" href="resources.html">Resources</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            </ul>
-            <div class="ms-3">
-                <a href="#" class="btn btn-login me-2">Login</a>
-                <a href="#" class="btn btn-signup">Sign Up</a>
-            </div>
-        </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">CampusConnect</div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="academics.html">Academics</a>
+        <a href="resources.html" class="active">Resources</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-</nav>
+  </header>
 
-<section class="hero" style="padding: 80px 0;">
-    <div class="container">
-        <h1>Student Resources</h1>
-        <p>Everything you need to succeed academically</p>
+  <main class="container page-content">
+    <!-- Downloadable study notes -->
+    <section id="notes" class="single-card">
+      <article class="card">
+        <h1>Downloadable Study Notes</h1>
+        <p>Download notes and materials to support your revision.</p>
+        <ul>
+          <li><a href="notes/year1-intro-programming.pdf" target="_blank">Year 1 – Intro to Programming (PDF)</a></li>
+          <li><a href="notes/business-management-revision.pdf" target="_blank">Business Management – Revision Summary (PDF)</a></li>
+          <li><a href="notes/maths-formula-sheet.pdf" target="_blank">Mathematics – Formula Sheet (PDF)</a></li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Video tutorials -->
+    <section id="videos" class="single-card">
+      <article class="card">
+        <h2>Video Tutorials</h2>
+        <p>Watch short videos that explain key concepts and study strategies.</p>
+        <ul>
+          <li><a href="#" target="_blank">How to Plan Your Study Week</a></li>
+          <li><a href="#" target="_blank">Note‑Taking Tips for Lectures</a></li>
+          <li><a href="#" target="_blank">Using Online Tools for Group Projects</a></li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- External links -->
+    <section id="links" class="single-card">
+      <article class="card">
+        <h2>External Links</h2>
+        <p>Useful websites to support your learning and coding practice.</p>
+        <ul>
+          <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+          <li><a href="https://github.com" target="_blank">GitHub</a></li>
+          <li><a href="https://stackoverflow.com" target="_blank">Stack Overflow</a></li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> CampusConnect.</p>
+      <nav class="footer-nav">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="sitemap.html">Sitemap</a>
+      </nav>
     </div>
-</section>
-
-<div class="container my-5">
-    <div class="row g-4">
-        <div class="col-md-4">
-            <div class="card p-4 text-center h-100">
-                <div class="card-icon"><i class="fas fa-file-pdf"></i></div>
-                <h3 class="card-title">Study Notes</h3>
-                <p>Download notes for Web Development, Systems Development, and Business Intelligence.</p>
-                <a href="#" class="btn btn-primary mt-2" style="border-radius: 25px; background: linear-gradient(135deg, #667eea, #764ba2); border: none;">Download PDFs</a>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card p-4 text-center h-100">
-                <div class="card-icon"><i class="fas fa-video"></i></div>
-                <h3 class="card-title">Video Tutorials</h3>
-                <p>Watch tutorials on HTML, CSS, JavaScript, and Database Design.</p>
-                <a href="#" class="btn btn-primary mt-2" style="border-radius: 25px; background: linear-gradient(135deg, #667eea, #764ba2); border: none;">Watch Now</a>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card p-4 text-center h-100">
-                <div class="card-icon"><i class="fas fa-external-link-alt"></i></div>
-                <h3 class="card-title">External Links</h3>
-                <p>Access W3Schools, GitHub, Stack Overflow, and more learning platforms.</p>
-                <a href="#" class="btn btn-primary mt-2" style="border-radius: 25px; background: linear-gradient(135deg, #667eea, #764ba2); border: none;">Visit Links</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<footer>
-    <div class="container text-center">
-        <p>© 2026 CampusConnect | Designed for students | Built for success</p>
-        <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a> | <a href="sitemap.html">Sitemap</a></p>
-    </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
 </body>
 </html>

@@ -1,77 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CampusConnect | About</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>CampusConnect – About</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">CampusConnect</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="academics.html">Academics</a></li>
-                <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            </ul>
-            <div class="ms-3">
-                <a href="#" class="btn btn-login me-2">Login</a>
-                <a href="#" class="btn btn-signup">Sign Up</a>
-            </div>
-        </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">CampusConnect</div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="academics.html">Academics</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-</nav>
+  </header>
 
-<section class="hero" style="padding: 80px 0;">
-    <div class="container">
-        <h1>About CampusConnect</h1>
-        <p>Learn more about our mission and vision</p>
+  <main class="container page-content">
+    <!-- Mission & Vision -->
+    <section id="mission-vision" class="two-cards">
+      <article class="card">
+        <h1>Our Mission</h1>
+        <p>
+          CampusConnect exists to make academic and campus information easy to find, understand, and use.
+          Our mission is to give university students one reliable place where they can access notes,
+          announcements, and updates that support their studies and campus life.
+        </p>
+      </article>
+      <article class="card">
+        <h1>Our Vision</h1>
+        <p>
+          We imagine a campus where no student misses an important update or study resource.
+          CampusConnect aims to be the main digital hub for students in Gaborone, helping them stay
+          informed, engaged, and ready for academic success.
+        </p>
+      </article>
+    </section>
+
+    <!-- Developer information -->
+    <section id="developer" class="single-card">
+      <article class="card">
+        <h2>About the Developer</h2>
+        <p>
+          CampusConnect was developed as a student‑centred project to solve a real problem:
+          important information was scattered across WhatsApp groups, social media, and notice boards.
+          This platform brings everything together in one organised, searchable website so students
+          can quickly find what they need, anytime and from anywhere.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> CampusConnect.</p>
+      <nav class="footer-nav">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="sitemap.html">Sitemap</a>
+      </nav>
     </div>
-</section>
-
-<div class="container my-5">
-    <div class="row g-4">
-        <div class="col-md-4">
-            <div class="card p-4 text-center h-100">
-                <div class="card-icon"><i class="fas fa-bullseye"></i></div>
-                <h3 class="card-title">Our Mission</h3>
-                <p>To provide a centralized platform where students can easily access academic resources and campus information.</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card p-4 text-center h-100">
-                <div class="card-icon"><i class="fas fa-eye"></i></div>
-                <h3 class="card-title">Our Vision</h3>
-                <p>To become the leading digital platform that supports student success and engagement across all universities.</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card p-4 text-center h-100">
-                <div class="card-icon"><i class="fas fa-code"></i></div>
-                <h3 class="card-title">Developer</h3>
-                <p>Created as part of a Business Intelligence and Data Analytics program using HTML5, CSS3, Bootstrap, and JavaScript.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<footer>
-    <div class="container text-center">
-        <p>© 2026 CampusConnect | Designed for students | Built for success</p>
-        <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a> | <a href="sitemap.html">Sitemap</a></p>
-    </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
 </body>
 </html>

@@ -1,91 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CampusConnect | Contact</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>CampusConnect – Contact</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">CampusConnect</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="academics.html">Academics</a></li>
-                <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
-                <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
-            </ul>
-            <div class="ms-3">
-                <a href="#" class="btn btn-login me-2">Login</a>
-                <a href="#" class="btn btn-signup">Sign Up</a>
-            </div>
-        </div>
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">CampusConnect</div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="academics.html">Academics</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
     </div>
-</nav>
+  </header>
 
-<section class="hero" style="padding: 80px 0;">
-    <div class="container">
+  <!-- Main content -->
+  <main class="container page-content">
+    <!-- Contact form -->
+    <section id="contact-form" class="single-card">
+      <article class="card">
         <h1>Contact Us</h1>
-        <p>We'd love to hear from you</p>
-    </div>
-</section>
+        <p>Use the form below to contact the CampusConnect team.</p>
 
-<div class="container my-5">
-    <div class="row g-4">
-        <div class="col-lg-6 mx-auto">
-            <div class="card p-4">
-                <h3 class="text-center mb-4">Send us a message</h3>
-                <form id="contactForm">
-                    <div class="mb-3">
-                        <input type="text" class="form-control" id="name" placeholder="Your Name" required style="padding: 12px; border-radius: 10px;">
-                    </div>
-                    <div class="mb-3">
-                        <input type="email" class="form-control" id="email" placeholder="Your Email" required style="padding: 12px; border-radius: 10px;">
-                    </div>
-                    <div class="mb-3">
-                        <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required style="padding: 12px; border-radius: 10px;"></textarea>
-                    </div>
-                    <button type="submit" class="btn w-100" style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 12px; border-radius: 25px; font-weight: bold;">Send Message</button>
-                </form>
-                <hr class="my-4">
-                <div class="text-center">
-                    <p><i class="fas fa-envelope"></i> CampusConnect@university.ac.bw</p>
-                    <p><i class="fab fa-facebook"></i> <a href="#">Facebook</a> • <i class="fab fa-instagram"></i> <a href="#">Instagram</a> • <i class="fab fa-twitter"></i> <a href="#">Twitter</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required>
+          </div>
 
-<footer>
-    <div class="container text-center">
-        <p>© 2026 CampusConnect | Designed for students | Built for success</p>
-        <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a> | <a href="sitemap.html">Sitemap</a></p>
-    </div>
-</footer>
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    let name = document.getElementById('name').value.trim();
-    let email = document.getElementById('email').value.trim();
-    let message = document.getElementById('message').value.trim();
-    if (!name) { alert("Please enter your name"); return; }
-    if (!email) { alert("Please enter your email"); return; }
-    if (!message) { alert("Please enter your message"); return; }
-    alert("Thank you " + name + "! Your message has been sent.");
-    this.reset();
-});
-</script>
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p id="formMessage" class="form-message"></p>
+        </form>
+      </article>
+    </section>
+
+    <!-- Feedback section -->
+    <section id="feedback" class="single-card">
+      <article class="card">
+        <h2>Feedback</h2>
+        <p>
+          CampusConnect is built for students, so your feedback is important.
+          Tell us what works well, what is confusing, or what you would like to see added.
+        </p>
+      </article>
+    </section>
+
+    <!-- Other contact details -->
+    <section id="other-contact" class="single-card">
+      <article class="card">
+        <h2>Other Contact Details</h2>
+        <ul>
+          <li>Email: <a href="mailto:info@campusconnect.example">info@campusconnect.example</a></li>
+          <li>Facebook: CampusConnect Gaborone</li>
+          <li>Instagram: @CampusConnectBW</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> CampusConnect.</p>
+      <nav class="footer-nav">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="sitemap.html">Sitemap</a>
+      </nav>
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script src="script.js"></script>
+  </footer>
 </body>
 </html>

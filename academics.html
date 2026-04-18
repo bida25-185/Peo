@@ -1,77 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CampusConnect | Academics</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>CampusConnect – Academics</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">CampusConnect</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                <li class="nav-item"><a class="nav-link active" href="academics.html">Academics</a></li>
-                <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            </ul>
-            <div class="ms-3">
-                <a href="#" class="btn btn-login me-2">Login</a>
-                <a href="#" class="btn btn-signup">Sign Up</a>
-            </div>
-        </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">CampusConnect</div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="academics.html" class="active">Academics</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-</nav>
+  </header>
 
-<section class="hero" style="padding: 80px 0;">
-    <div class="container">
-        <h1>Academics</h1>
-        <p>Your pathway to academic excellence</p>
+  <main class="container page-content">
+    <!-- Course overview -->
+    <section id="overview" class="single-card">
+      <article class="card">
+        <h1>Course Overview</h1>
+        <p>
+          This section gives a brief overview of the courses and topics students will engage with during
+          the semester. It helps students understand what to expect and how each course fits into their
+          academic journey.
+        </p>
+        <ul>
+          <li>Main modules covered this semester</li>
+          <li>Key themes and learning outcomes</li>
+          <li>Major assessments linked to each course</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Study tips -->
+    <section id="study-tips" class="single-card">
+      <article class="card">
+        <h2>Study Tips</h2>
+        <p>
+          Practical advice to help students improve their study habits and manage their time effectively.
+        </p>
+        <ul>
+          <li>Create a weekly study schedule and stick to it.</li>
+          <li>Review notes regularly instead of cramming before exams.</li>
+          <li>Use past papers and examples to practise.</li>
+          <li>Study in a quiet space with minimal distractions.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Academic calendar (table) -->
+    <section id="calendar" class="single-card">
+      <article class="card">
+        <h2>Academic Calendar</h2>
+        <p>Key academic dates to help you plan ahead.</p>
+        <table class="calendar-table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Event</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>5 Feb</td>
+              <td>Start of Semester 1</td>
+            </tr>
+            <tr>
+              <td>18–22 Mar</td>
+              <td>Midterm Exams</td>
+            </tr>
+            <tr>
+              <td>10 Apr</td>
+              <td>Major Assignment Submission</td>
+            </tr>
+            <tr>
+              <td>June</td>
+              <td>Final Exams</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> CampusConnect.</p>
+      <nav class="footer-nav">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="sitemap.html">Sitemap</a>
+      </nav>
     </div>
-</section>
-
-<div class="container my-5">
-    <div class="row g-4">
-        <div class="col-md-4">
-            <div class="card p-4 text-center h-100">
-                <div class="card-icon"><i class="fas fa-book"></i></div>
-                <h3 class="card-title">Course Overview</h3>
-                <p>Explore modules like Web Development, Systems Development, and Business Intelligence.</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card p-4 text-center h-100">
-                <div class="card-icon"><i class="fas fa-chalkboard-user"></i></div>
-                <h3 class="card-title">Study Tips</h3>
-                <p>Create a study timetable, revise regularly, and use multiple resources.</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card p-4 text-center h-100">
-                <div class="card-icon"><i class="fas fa-calendar-alt"></i></div>
-                <h3 class="card-title">Academic Calendar</h3>
-                <p>Keep track of assignment deadlines, test dates, and examination periods.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<footer>
-    <div class="container text-center">
-        <p>© 2026 CampusConnect | Designed for students | Built for success</p>
-        <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a> | <a href="sitemap.html">Sitemap</a></p>
-    </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
 </body>
 </html>
