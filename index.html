@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CampusConnect | Home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>CampusConnect - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Navigation -->
 <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">CampusConnect</a>
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">🏠 CampusConnect</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -25,82 +23,60 @@
                 <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
-            <div class="ms-3">
-                <a href="#" class="btn btn-login me-2">Login</a>
-                <a href="#" class="btn btn-signup">Sign Up</a>
-            </div>
         </div>
     </div>
 </nav>
 
-<!-- Hero Section -->
-<section class="hero">
-    <div class="container">
-        <h1>Welcome to CampusConnect</h1>
-        <p>Your smart hub for academic success</p>
-        <a href="resources.html" class="btn btn-hero-primary">Resources</a>
-        <a href="academics.html" class="btn btn-hero-outline">Courses</a>
-    </div>
-</section>
+<div class="hero">
+    <h1>Your Central Hub for Campus Success</h1>
+    <p>Access all your academic resources and campus updates in one place.</p>
+    <button class="btn-custom" onclick="location.href='resources.html'">Find Resources</button>
+    <button class="btn-custom" onclick="location.href='academics.html'">Explore Courses</button>
+</div>
 
-<!-- Main Content -->
 <div class="container my-5">
     <div class="row g-4">
-        
-        <!-- Left Column (70%) -->
-        <div class="col-lg-8">
-            <!-- Latest Announcements Card -->
-            <div class="card p-4 mb-4">
-                <div class="card-icon">
-                    <i class="fas fa-bullhorn" style="color: #667eea;"></i>
-                </div>
-                <h3 class="card-title">Latest Announcements</h3>
+        <div class="col-md-4">
+            <div class="card">
+                <h3>📚 Academics</h3>
                 <ul>
-                    <li><strong>500 Visitors in First Month!</strong> - Thank you for your support</li>
-                    <li><strong>New study notes available</strong> - Web Development and Systems Development</li>
-                    <li><strong>Feedback form updated</strong> - Tell us how we can improve</li>
+                    <li>Course Overview</li>
+                    <li>Study Tips</li>
+                    <li>Academic Calendar</li>
                 </ul>
-            </div>
-            
-            <!-- Study Tips Card -->
-            <div class="card p-4">
-                <div class="card-icon">
-                    <i class="fas fa-lightbulb" style="color: #f59e0b;"></i>
-                </div>
-                <h3 class="card-title">Study Tips</h3>
-                <p>Revise daily and practice past papers. Stay consistent with your study schedule and use active recall techniques.</p>
-                <a href="#" class="btn btn-outline-primary mt-2" style="border-radius: 25px;">Get Tips</a>
+                <button class="btn-custom" onclick="location.href='academics.html'">Learn More</button>
             </div>
         </div>
-        
-        <!-- Right Column (28%) - Quick Links Sidebar -->
-        <div class="col-lg-4">
-            <div class="quick-links">
-                <h4><i class="fas fa-link"></i> Quick Links</h4>
+        <div class="col-md-4">
+            <div class="card">
+                <h3>📢 Latest Announcements</h3>
                 <ul>
-                    <li><a href="resources.html"><i class="fas fa-file-pdf"></i> Download PDFs</a></li>
-                    <li><a href="resources.html"><i class="fas fa-video"></i> Video Tutorials</a></li>
-                    <li><a href="contact.html"><i class="fas fa-headset"></i> Student Support</a></li>
+                    <li>500 Visitors in First Month</li>
+                    <li>New Study Notes Available</li>
+                    <li>Feedback Form Updated</li>
                 </ul>
-                <hr>
-                <p class="text-muted small mb-0">New notes uploaded for WMD and SD.</p>
+                <button class="btn-custom" onclick="location.href='resources.html'">View All</button>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <h3>📁 Resources</h3>
+                <ul>
+                    <li>Study Notes (PDFs)</li>
+                    <li>Useful Links</li>
+                    <li>Video Tutorials</li>
+                </ul>
+                <button class="btn-custom" onclick="location.href='resources.html'">Access Now</button>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Footer -->
 <footer>
-    <div class="container text-center">
-        <p>© 2026 CampusConnect | Designed for students | Built for success</p>
-        <p>
-            <a href="privacy.html">Privacy Policy</a> |
-            <a href="terms.html">Terms of Use</a> |
-            <a href="sitemap.html">Sitemap</a>
-        </p>
-    </div>
+    <p>© 2026 CampusConnect | Designed for students | Built for success</p>
+    <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a> | <a href="sitemap.html">Sitemap</a></p>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

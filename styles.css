@@ -2,218 +2,113 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 body {
-    font-family: 'Poppins', 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background: linear-gradient(135deg, #0a1f44, #3b0a57, #6a0dad);
+    background-attachment: fixed;
+    color: white;
     min-height: 100vh;
 }
 
-/* Navigation */
+/* NAVBAR */
 .navbar {
-    background: white !important;
-    box-shadow: 0 2px 20px rgba(0,0,0,0.05);
-    padding: 15px 0 !important;
+    background: rgba(0, 0, 0, 0.6) !important;
+    padding: 15px 50px !important;
 }
 
 .navbar-brand {
-    font-size: 28px !important;
+    color: #00e0ff !important;
+    font-size: 24px !important;
     font-weight: bold;
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent !important;
 }
 
 .navbar-nav .nav-link {
-    color: #4a5568 !important;
-    font-weight: 500;
+    color: white !important;
+    position: relative;
     margin: 0 10px;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #00e0ff;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
     transition: 0.3s;
 }
 
-.navbar-nav .nav-link:hover {
-    color: #667eea !important;
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    width: 100%;
 }
 
-.navbar-nav .nav-link.active {
-    color: #667eea !important;
-    font-weight: 600;
-}
-
-.btn-login {
-    background: transparent;
-    border: 1px solid #667eea;
-    color: #667eea;
-    padding: 8px 20px;
-    border-radius: 25px;
-    font-weight: 500;
-    transition: 0.3s;
-}
-
-.btn-login:hover {
-    background: #667eea;
-    color: white;
-}
-
-.btn-signup {
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    border: none;
-    color: white;
-    padding: 8px 20px;
-    border-radius: 25px;
-    font-weight: 500;
-    transition: 0.3s;
-}
-
-.btn-signup:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(102,126,234,0.4);
-}
-
-/* Hero Section */
+/* HERO */
 .hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    padding: 100px 0;
     text-align: center;
-    color: white;
+    padding: 80px 20px;
+    background: radial-gradient(circle at center, rgba(255,255,255,0.05), transparent);
 }
 
 .hero h1 {
-    font-size: 56px;
-    font-weight: bold;
+    font-size: 48px;
     margin-bottom: 20px;
+    color: #fff;
 }
 
 .hero p {
-    font-size: 20px;
+    color: #ccc;
+    font-size: 18px;
     margin-bottom: 30px;
-    opacity: 0.9;
 }
 
-.btn-hero-primary {
-    background: white;
-    color: #667eea;
-    padding: 12px 35px;
-    border-radius: 30px;
-    font-weight: bold;
+.btn-custom {
+    padding: 12px 30px;
+    border-radius: 25px;
     border: none;
     margin: 10px;
-    transition: 0.3s;
-}
-
-.btn-hero-primary:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
-
-.btn-hero-outline {
-    background: transparent;
-    border: 2px solid white;
+    background: linear-gradient(90deg, #00e0ff, #6a0dad);
     color: white;
-    padding: 12px 35px;
-    border-radius: 30px;
     font-weight: bold;
-    margin: 10px;
     transition: 0.3s;
 }
 
-.btn-hero-outline:hover {
-    background: white;
-    color: #667eea;
-    transform: translateY(-3px);
+.btn-custom:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #6a0dad, #00e0ff);
 }
 
-/* Cards */
+/* CARDS */
 .card {
-    border: none;
-    border-radius: 20px;
-    transition: 0.3s;
-    height: 100%;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-}
-
-.card-icon {
-    font-size: 48px;
-    margin-bottom: 15px;
-}
-
-.card-title {
-    font-weight: bold;
-    margin-bottom: 15px;
-    color: #2d3748;
-}
-
-.card-text {
-    color: #718096;
-}
-
-/* Quick Links */
-.quick-links {
-    background: white;
-    border-radius: 20px;
+    background: rgba(255,255,255,0.08);
     padding: 25px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-}
-
-.quick-links h4 {
-    color: #2d3748;
+    border-radius: 15px;
     margin-bottom: 20px;
+    border: none;
 }
 
-.quick-links ul {
-    list-style: none;
-    padding-left: 0;
+.card h2, .card h3 {
+    color: #00e0ff;
+    margin-bottom: 15px;
 }
 
-.quick-links li {
-    margin-bottom: 12px;
-}
-
-.quick-links a {
-    color: #667eea;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.quick-links a:hover {
-    color: #764ba2;
-    padding-left: 5px;
-}
-
-/* Footer */
+/* FOOTER */
 footer {
-    background: #1a1a2e;
-    color: white;
-    padding: 40px 0 20px;
-    margin-top: 60px;
+    text-align: center;
+    padding: 30px;
+    background: rgba(0,0,0,0.5);
+    margin-top: 50px;
 }
 
 footer a {
-    color: #aaa;
+    color: #00e0ff;
     text-decoration: none;
-    transition: 0.3s;
+    margin: 0 10px;
 }
 
 footer a:hover {
-    color: #667eea;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 36px;
-    }
-    .hero p {
-        font-size: 16px;
-    }
-    .navbar-brand {
-        font-size: 22px !important;
-    }
+    text-decoration: underline;
 }
