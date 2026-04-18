@@ -1,94 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CampusConnect | Home</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnect | Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="index.html">CampusConnect</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto text-center">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="academics.html">Academics</a></li>
-        <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">CampusConnect</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="academics.html">Academics</a></li>
+                <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="ms-3">
+                <a href="#" class="btn btn-login me-2">Login</a>
+                <a href="#" class="btn btn-signup">Sign Up</a>
+            </div>
+        </div>
     </div>
-  </div>
 </nav>
 
 <!-- Hero Section -->
 <section class="hero">
-  <div class="container">
-    <h1>Welcome to CampusConnect</h1>
-    <p class="lead mb-4">Your one-stop platform for academic updates, resources, and campus life.</p>
-    <a href="resources.html" class="btn btn-primary-custom me-2">Find Resources</a>
-    <a href="academics.html" class="btn btn-outline-custom">Explore Courses</a>
-  </div>
+    <div class="container">
+        <h1>Welcome to CampusConnect</h1>
+        <p>Your smart hub for academic success</p>
+        <a href="resources.html" class="btn btn-hero-primary">Resources</a>
+        <a href="academics.html" class="btn btn-hero-outline">Courses</a>
+    </div>
 </section>
 
-<!-- Latest Announcements & Quick Links -->
-<section class="py-5">
-  <div class="container">
-    <div class="row">
-      <!-- Left Column (70%) -->
-      <div class="col-lg-8">
-        <div class="card">
-          <div class="card-body">
-            <h3>📢 Latest Announcements</h3>
-            <ul>
-              <li><strong>500 Visitors in First Month!</strong> - Thank you for your support</li>
-              <li><strong>New study notes available</strong> - Web Development and Systems Development</li>
-              <li><strong>Feedback form updated</strong> - Tell us how we can improve</li>
-            </ul>
-          </div>
+<!-- Main Content -->
+<div class="container my-5">
+    <div class="row g-4">
+        
+        <!-- Left Column (70%) -->
+        <div class="col-lg-8">
+            <!-- Latest Announcements Card -->
+            <div class="card p-4 mb-4">
+                <div class="card-icon">
+                    <i class="fas fa-bullhorn" style="color: #667eea;"></i>
+                </div>
+                <h3 class="card-title">Latest Announcements</h3>
+                <ul>
+                    <li><strong>500 Visitors in First Month!</strong> - Thank you for your support</li>
+                    <li><strong>New study notes available</strong> - Web Development and Systems Development</li>
+                    <li><strong>Feedback form updated</strong> - Tell us how we can improve</li>
+                </ul>
+            </div>
+            
+            <!-- Study Tips Card -->
+            <div class="card p-4">
+                <div class="card-icon">
+                    <i class="fas fa-lightbulb" style="color: #f59e0b;"></i>
+                </div>
+                <h3 class="card-title">Study Tips</h3>
+                <p>Revise daily and practice past papers. Stay consistent with your study schedule and use active recall techniques.</p>
+                <a href="#" class="btn btn-outline-primary mt-2" style="border-radius: 25px;">Get Tips</a>
+            </div>
         </div>
-        <div class="card">
-          <div class="card-body">
-            <h3>💡 Study Tips</h3>
-            <p>Stay consistent, revise daily, and practice past exam questions. Use the resources section to download notes and watch video tutorials.</p>
-          </div>
+        
+        <!-- Right Column (28%) - Quick Links Sidebar -->
+        <div class="col-lg-4">
+            <div class="quick-links">
+                <h4><i class="fas fa-link"></i> Quick Links</h4>
+                <ul>
+                    <li><a href="resources.html"><i class="fas fa-file-pdf"></i> Download PDFs</a></li>
+                    <li><a href="resources.html"><i class="fas fa-video"></i> Video Tutorials</a></li>
+                    <li><a href="contact.html"><i class="fas fa-headset"></i> Student Support</a></li>
+                </ul>
+                <hr>
+                <p class="text-muted small mb-0">New notes uploaded for WMD and SD.</p>
+            </div>
         </div>
-      </div>
-      <!-- Right Column (28%) -->
-      <div class="col-lg-4">
-        <div class="card">
-          <div class="card-body">
-            <h3>🔗 Quick Links</h3>
-            <p><a href="resources.html">📄 Download Notes</a></p>
-            <p><a href="resources.html">🎥 Video Tutorials</a></p>
-            <p><a href="contact.html">💬 Student Support</a></p>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-</section>
+</div>
 
 <!-- Footer -->
-<footer class="text-center">
-  <div class="container">
-    <p>© 2026 CampusConnect | Designed for students | Built for success</p>
-    <p>
-      <a href="privacy.html">Privacy Policy</a> |
-      <a href="terms.html">Terms of Use</a> |
-      <a href="sitemap.html">Sitemap</a>
-    </p>
-  </div>
+<footer>
+    <div class="container text-center">
+        <p>© 2026 CampusConnect | Designed for students | Built for success</p>
+        <p>
+            <a href="privacy.html">Privacy Policy</a> |
+            <a href="terms.html">Terms of Use</a> |
+            <a href="sitemap.html">Sitemap</a>
+        </p>
+    </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
 </body>
 </html>
